@@ -1,8 +1,8 @@
 package domain.domainAttachment;
 
 public class Preview {
-    private Photo photo;
     private Size[] sizes;
+    private Photo photo;
     private Graffiti graffiti;
     private AudioMessage audioMessage;
     private Doc doc;

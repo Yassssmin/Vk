@@ -5,6 +5,7 @@ public class Size {
     private int height;
     private String type;
     private String url;
+    private Photo photo;
 
     public int getWidth() {
         return width;
@@ -38,13 +39,11 @@ public class Size {
         this.url = url;
     }
 
-    public Photo getFoto() {
-        return foto;
+    public Photo getPhoto() {
+        return photo;
     }
 
-    public void setFoto(Photo foto) {
-        this.foto = foto;
+    public void setPhoto(Photo photo) {
+        this.photo = photo;
     }
-
-    private Photo foto;
 }

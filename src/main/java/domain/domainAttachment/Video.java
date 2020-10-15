@@ -10,13 +10,6 @@ public class Video {
     private int views;
     private int localViews;
     private int comments;
-    private int canAdd;
-    private int canComment;
-    private int canLike;
-    private int canRepost;
-    private int canSubscribe;
-    private int canAddToFaves;
-    private int canAttachLink;
     private int width;
     private int height;
     private int converting;
@@ -24,6 +17,12 @@ public class Video {
     private int isSubscribed;
     private int balance;
     private int spectators;
+    private int canEdit = 1;
+    private int isPrivate = 1;
+    private int processing = 1;
+    private int repeat = 1;
+    private int live = 1;
+    private int upcoming = 1;
     private String title;
     private String description;
     private String player;
@@ -31,14 +30,18 @@ public class Video {
     private String accessKey;
     private String type;
     private String liveStatus;
+    private boolean canAdd;
+    private boolean canComment;
+    private boolean canLike;
+    private boolean canRepost;
+    private boolean canSubscribe;
+    private boolean canAddToFaves;
+    private boolean canAttachLink;
     private boolean isFavorite;
-    private int canEdit = 1;
-    private int isPrivate = 1;
-    private int processing = 1;
-    private int repeat = 1;
-    private int live = 1;
-    private int upcoming = 1;
     private Image[] image;
+    private FirstFrame[] firstFrame;
+    private Likes likes;
+    private Reposts reposts;
 
     public int getId() {
         return id;
@@ -112,59 +115,59 @@ public class Video {
         this.comments = comments;
     }
 
-    public int getCanAdd() {
+    public boolean isCanAdd() {
         return canAdd;
     }
 
-    public void setCanAdd(int canAdd) {
+    public void setCanAdd(boolean canAdd) {
         this.canAdd = canAdd;
     }
 
-    public int getCanComment() {
+    public boolean isCanComment() {
         return canComment;
     }
 
-    public void setCanComment(int canComment) {
+    public void setCanComment(boolean canComment) {
         this.canComment = canComment;
     }
 
-    public int getCanLike() {
+    public boolean isCanLike() {
         return canLike;
     }
 
-    public void setCanLike(int canLike) {
+    public void setCanLike(boolean canLike) {
         this.canLike = canLike;
     }
 
-    public int getCanRepost() {
+    public boolean isCanRepost() {
         return canRepost;
     }
 
-    public void setCanRepost(int canRepost) {
+    public void setCanRepost(boolean canRepost) {
         this.canRepost = canRepost;
     }
 
-    public int getCanSubscribe() {
+    public boolean isCanSubscribe() {
         return canSubscribe;
     }
 
-    public void setCanSubscribe(int canSubscribe) {
+    public void setCanSubscribe(boolean canSubscribe) {
         this.canSubscribe = canSubscribe;
     }
 
-    public int getCanAddToFaves() {
+    public boolean isCanAddToFaves() {
         return canAddToFaves;
     }
 
-    public void setCanAddToFaves(int canAddToFaves) {
+    public void setCanAddToFaves(boolean canAddToFaves) {
         this.canAddToFaves = canAddToFaves;
     }
 
-    public int getCanAttachLink() {
+    public boolean isCanAttachLink() {
         return canAttachLink;
     }
 
-    public void setCanAttachLink(int canAttachLink) {
+    public void setCanAttachLink(boolean canAttachLink) {
         this.canAttachLink = canAttachLink;
     }
 
@@ -367,8 +370,4 @@ public class Video {
     public void setReposts(Reposts reposts) {
         this.reposts = reposts;
     }
-
-    private FirstFrame[] firstFrame;
-    private Likes likes;
-    private Reposts reposts;
 }

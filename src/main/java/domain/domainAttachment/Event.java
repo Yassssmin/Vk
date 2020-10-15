@@ -3,12 +3,12 @@ package domain.domainAttachment;
 public class Event {
     private int id;
     private int time;
+    private int friends;
     private int memberStatus;
-    private boolean isFavorite;
     private String address;
     private String text;
     private String buttonText;
-    private int friends;
+    private boolean isFavorite;
 
     public int getId() {
         return id;

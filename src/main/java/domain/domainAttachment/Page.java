@@ -17,6 +17,8 @@ public class Page {
     private String parent2;
     private String source;
     private String html;
+    private String viewUrl;
+
 
     public int getId() {
         return id;
@@ -153,6 +155,4 @@ public class Page {
     public void setViewUrl(String viewUrl) {
         this.viewUrl = viewUrl;
     }
-
-    private String viewUrl;
 }

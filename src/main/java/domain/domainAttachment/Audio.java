@@ -8,11 +8,11 @@ public class Audio {
     private int genreId;
     private int duration;
     private int date;
+    private int noSearch = 1;
+    private int isHq = 1;
     private String artist;
     private String title;
     private String url;
-    private int noSearch = 1;
-    private int isHq = 1;
 
     public int getId() {
         return id;

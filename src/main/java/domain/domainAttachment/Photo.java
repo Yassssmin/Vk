@@ -5,11 +5,13 @@ public class Photo {
     private int albumId;
     private int ownerId;
     private int userId;
-    private String text;
     private int date;
     private int width;
     private int height;
+    private String text;
     private Size[] sizes;
+    private MarketAlbum marketAlbum;
+
 
     public int getId() {
         return id;
@@ -90,6 +92,4 @@ public class Photo {
     public void setMarketAlbum(MarketAlbum marketAlbum) {
         this.marketAlbum = marketAlbum;
     }
-
-    private MarketAlbum marketAlbum;
 }

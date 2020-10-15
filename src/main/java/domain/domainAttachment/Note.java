@@ -8,6 +8,8 @@ public class Note {
     private int readComments;
     private String title;
     private String text;
+    private String viewUrl;
+
 
     public int getId() {
         return id;
@@ -72,6 +74,4 @@ public class Note {
     public void setViewUrl(String viewUrl) {
         this.viewUrl = viewUrl;
     }
-
-    private String viewUrl;
 }

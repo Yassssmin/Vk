@@ -3,9 +3,9 @@ package domain.domainAttachment;
 public class MarketAlbum {
     private int id;
     private int ownerId;
-    private String title;
     private int count;
     private int updatedTime;
+    private String title;
     private Photo photo;
 
     public int getId() {
